@@ -40,6 +40,8 @@
                 android:textColor="@color/blue_grey"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/priceTxt"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,7 +66,7 @@
                 app:layout_constraintTop_toTopOf="@+id/starTxt"/>
 
             <TextView
-                android:id="@+id/priceTxt"
+                android:id="@+id/textView9"
                 android:layout_width="44dp"
                 android:layout_height="39dp"
                 android:text="+"
@@ -81,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:text="Time"
                 app:layout_constraintBottom_toBottomOf="@+id/starTxt"
-                app:layout_constraintEnd_toStartOf="@+id/priceTxt"
+                app:layout_constraintEnd_toStartOf="@+id/textView9"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
                 app:layout_constraintTop_toTopOf="@+id/starTxt" />
 
@@ -95,6 +97,19 @@
                 app:layout_constraintStart_toEndOf="@+id/timeTxt"
                 app:layout_constraintTop_toTopOf="@+id/timeTxt"
                 app:srcCompat="@drawable/time" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="$0"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/titleTxt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/titleTxt" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
