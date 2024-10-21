@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -40,14 +41,14 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Store"
+                    android:text="App"
                     android:textStyle="italic"
                     android:textSize="45dp"
                     />
             </LinearLayout>
 
             <EditText
-                android:id="@+id/usrEdit"
+                android:id="@+id/userEdit"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="32dp"
@@ -63,7 +64,7 @@
                 android:inputType="text"/>
 
             <EditText
-                android:id="@+id/pasEdit"
+                android:id="@+id/passEdit"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
@@ -94,6 +95,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/red_button_background"
                 android:text="Login"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 style="@android:style/Widget.Button"
                 android:textColor="@android:color/white"
