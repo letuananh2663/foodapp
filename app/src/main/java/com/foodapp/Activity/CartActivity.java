@@ -45,7 +45,7 @@ public class CartActivity extends BaseActivity {
             binding.scrollviewCart.setVisibility(View.VISIBLE);
         }
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         binding.cartView.setLayoutManager(linearLayoutManager);
         adapter=new CartAdapter(managmentCart.getListCart(), this, () -> calculateCart());
         binding.cartView.setAdapter(adapter);

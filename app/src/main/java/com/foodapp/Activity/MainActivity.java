@@ -65,12 +65,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
-        binding.cartBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, CartActivity.class));
-            }
-        });
+        binding.cartBtn.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, CartActivity.class)));
     }
 
     private void initBestFood() {

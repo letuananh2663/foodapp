@@ -49,7 +49,7 @@ public class DetailActivity extends BaseActivity {
         binding.plusBtn.setOnClickListener(view -> {
             num=num+1;
             binding.numTxt.setText(num+" ");
-            binding.totalTxt.setText(("$"+num*object.getPrice())+"");
+            binding.totalTxt.setText(("$"+num*object.getPrice()));
         });
 
         binding.minusBtn.setOnClickListener(view -> {
