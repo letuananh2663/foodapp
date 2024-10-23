@@ -162,7 +162,7 @@
                 android:layout_marginEnd="16dp">
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/deliveryTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Quantity"
@@ -185,7 +185,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView18"
+                    app:layout_constraintStart_toEndOf="@+id/deliveryTxt"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
@@ -194,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="1"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -245,7 +245,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/taxTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -263,8 +263,8 @@
             android:textSize="16sp"
             android:textColor="@color/blue_grey"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView20"
-            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+            app:layout_constraintStart_toStartOf="@+id/taxTxt"
+            app:layout_constraintTop_toBottomOf="@+id/taxTxt" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

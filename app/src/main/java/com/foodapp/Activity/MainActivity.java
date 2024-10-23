@@ -55,6 +55,7 @@ public class MainActivity extends BaseActivity {
             FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
         });
+
         binding.searchBtn.setOnClickListener(view -> {
             String text=binding.searchEdt.getText().toString();
             if(!text.isEmpty()){
@@ -62,6 +63,12 @@ public class MainActivity extends BaseActivity {
                 intent.putExtra("text",text);
                 intent.putExtra("isSearch", true);
                 startActivity(intent);
+            }
+        });
+        binding.cartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, CartActivity.class));
             }
         });
     }
