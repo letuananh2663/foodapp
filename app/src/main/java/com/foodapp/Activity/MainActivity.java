@@ -66,6 +66,7 @@ public class MainActivity extends BaseActivity {
             }
         });
         binding.cartBtn.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, CartActivity.class)));
+        binding.chatBtn.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, ChatActivity.class)));
     }
 
     private void initBestFood() {
