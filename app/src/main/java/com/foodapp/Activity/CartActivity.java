@@ -1,5 +1,6 @@
 package com.foodapp.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -68,5 +69,6 @@ public class CartActivity extends BaseActivity {
 
     private void setVariable() {
         binding.backBtn.setOnClickListener(view -> finish());
+        binding.payBtn.setOnClickListener(view -> startActivity(new Intent(CartActivity.this, PaymentActivity.class)));
     }
 }
