@@ -163,12 +163,9 @@
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="40dp"
-                tools:paddingBottom="40dp"
-                tools:srcCompat="@drawable/qr_code"
-                android:layout_gravity="center"/>
+                app:srcCompat="@drawable/qr_code2" />
 
         </LinearLayout>
     </ScrollView>

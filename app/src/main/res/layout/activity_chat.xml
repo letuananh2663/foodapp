@@ -6,41 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".Activity.ChatActivity">
 
-    <Button
-        android:id="@+id/sendBtn"
+    <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Send"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Help Center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextInput"
-        app:layout_constraintTop_toTopOf="@+id/editTextInput" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrow" />
 
     <EditText
         android:id="@+id/resultTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
+        android:layout_margin="16dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Output"
+        android:hint="Please send message to start conversation."
+        android:background="@drawable/edittext_background2"
+        android:padding="16dp"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/editTextInput"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/backBtn"
+        app:layout_constraintBottom_toTopOf="@id/editTextInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextInput"
-        android:layout_width="286dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Input"
+        android:hint="Message"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sendBtn"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:background="@drawable/red_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextInput"
+        app:layout_constraintTop_toTopOf="@id/editTextInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
