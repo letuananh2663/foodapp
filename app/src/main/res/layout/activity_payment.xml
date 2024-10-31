@@ -161,12 +161,6 @@
                 android:textSize="18sp"
                 android:layout_marginTop="40dp"/>
 
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/qr_code2" />
-
         </LinearLayout>
     </ScrollView>
 
@@ -179,5 +173,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/scrollviewCart"
         app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollviewCart"
+        app:layout_constraintEnd_toEndOf="@+id/scrollviewCart"
+        app:layout_constraintStart_toStartOf="@+id/scrollviewCart"
+        app:srcCompat="@drawable/qr_code" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
